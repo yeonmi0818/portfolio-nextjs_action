@@ -120,8 +120,8 @@ export default function Insert(){
       console.log(error);
     }else{
       alert('로그인 성공');
-      //setUser(data.user); //로그인한 유저의 유저 정보 반영
-      router.refresh();//로그인후 새로고침
+      setUser(data.user); //로그인한 유저의 유저 정보 반영
+      router.refresh(); //로그인후 새로고침
     }
   }
 
